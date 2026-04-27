@@ -1,0 +1,91 @@
+@import "theme.css";
+
+* {
+	all: initial; /* Reset GTK theme */
+	color: @main-fg;
+}
+
+@import "styles/fonts.css";
+@import "styles/modules-center.css";
+@import "styles/modules-left.css";
+@import "styles/modules-right.css";
+@import "styles/states.css";
+
+.module {
+	margin-bottom: -1px;
+}
+
+#waybar {
+	background-color: @outline;
+}
+#waybar > box {
+	margin: 4px;
+	background-color: @main-bg;
+}
+
+button {
+	border-radius: 16px;
+	min-width: 16px;
+	padding: 0 10px;
+}
+button:hover {
+	background-color: @hover-bg;
+	color: @hover-fg;
+}
+
+tooltip {
+	border: 2px solid @main-br;
+	border-radius: 10px;
+	background-color: @main-bg;
+}
+tooltip > box {
+	padding: 0 6px;
+}
+
+/* --- Mangowm 兼容性补丁 --- */
+
+/* 让 ext/workspaces 显形 */
+#workspaces button {
+all: initial; /* 覆盖 Mechabar 的全局重置 */
+color: @main-fg;
+padding: 0 8px;
+margin: 0 2px;
+font-family: "CommitMono Nerd Font";
+font-size: 14px;
+}
+
+/* 当前激活的标签 */
+#workspaces button.active {
+color: @hover-fg;
+background-color: @hover-bg;
+border-radius: 4px;
+}
+
+/* 有窗口的标签 */
+#workspaces button.occupied {
+color: @main-br; /* 或者换成你喜欢的强调色 */
+}
+
+/* 窗口标题样式 */
+#window {
+padding: 0 10px;
+font-style: italic;
+color: @main-fg;
+}
+#tray {
+background-color: #120c12;
+color: #f5e6f5;
+padding: 0 10px;
+margin: 0 5px;
+border: 1px solid #c341c4;
+border-radius: 8px;
+}
+
+#tray > .passive {
+-gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+-gtk-icon-effect: highlight;
+background-color: #eb4d4b;
+}

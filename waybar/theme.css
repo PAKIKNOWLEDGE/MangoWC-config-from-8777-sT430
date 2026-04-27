@@ -1,0 +1,74 @@
+/* ============================================================
+   Catppuccin Mocha - 调色盘定义区
+   ============================================================ */
+
+@define-color rosewater      #f5e0dc;
+@define-color flamingo       #f2cdcd;
+@define-color pink           #f5c2e7;
+@define-color mauve          #cba6f7;
+@define-color red            #f38ba8;
+@define-color maroon         #eba0ac;
+@define-color peach          #fab387;
+@define-color yellow         #f9e2af;
+@define-color green          #a6e3a1;
+@define-color teal           #94e2d5;
+@define-color sky            #89dceb;
+@define-color sapphire       #74c7ec;
+@define-color blue           #89b4fa;
+@define-color lavender       #c341c4; /* 你目前的强调色 改这里就行 */
+@define-color text           #cdd6f4; /* 主文字颜色 */
+@define-color subtext1       #bac2de;
+@define-color subtext0       #a6adc8;
+@define-color overlay2       #9399b2;
+@define-color overlay1       #7f849c;
+@define-color overlay0       #6c7086;
+@define-color surface2       #585b70;
+@define-color surface1       #45475a;
+@define-color surface0       #313244; /* 深灰色（用于某些模块背景） */
+@define-color base           #1e1e2e; /* 基础底色 */
+@define-color mantle         #181825; /* 次级底色 */
+@define-color crust          #11111b; /* 最深底色（你目前的 Waybar 背景） */
+
+/*
+    br - border (边框)
+    bg - background (背景)
+    fg - foreground (前景/文字)
+*/
+
+/* ============================================================
+   Main colors - 核心全局配色
+   想改整体感觉，重点动这里
+   ============================================================ */
+
+@define-color accent         @lavender; /* 全局强调色：目前是薰衣草紫 */
+@define-color main-br        @subtext0;  /* 全局边框色：目前是灰蓝色 */
+@define-color main-bg        @crust;     /* 全局背景色：目前是极深色 */
+@define-color main-fg        @text;      /* 全局文字色 */
+@define-color hover-bg       @base;      /* 鼠标悬停时的背景 */
+@define-color hover-fg       alpha(@main-fg, 0.75); /* 悬停时的文字（带透明度） */
+@define-color outline        shade(@main-bg, 0.5);  /* 外轮廓颜色（比背景更深一点） */
+
+/* ============================================================
+   Module colors - 具体模块背景色
+   这里决定了 Waybar 上各个小方块（CPU、内存等）自己的背景
+   ============================================================ */
+
+@define-color workspaces      @mantle;    /* 工作区背景 */
+@define-color temperature     @mantle;    /* 温度计背景 */
+@define-color memory          @base;      /* 内存模块背景 */
+@define-color cpu             @surface0;  /* CPU 模块背景 */
+@define-color time            @surface0;  /* 时间模块背景 */
+@define-color date            @base;      /* 日期模块背景 */
+@define-color tray            @mantle;    /* 系统托盘背景 */
+@define-color volume          @mantle;    /* 音量模块背景 */
+@define-color backlight       @base;      /* 亮度模块背景 */
+@define-color battery         @surface0;  /* 电池模块背景 */
+
+/* ============================================================
+   State colors - 状态颜色
+   用于告警或特殊显示
+   ============================================================ */
+
+@define-color warning         @yellow;    /* 警告状态（如低电量） */
+@define-color critical        @red;       /* 危险状态（如电池快没电了） */
+@define-color charging        @green;     /* 充电中状态 */
