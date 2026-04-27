@@ -1,7 +1,0 @@
-// DMS Window Rules - Managed by DankMaterialShell
-// Do not edit manually - changes may be overwritten
-
-// @id=wr_1776748325067592363 @name=one.alynx.showmethekey
-window-rule {
-    match app-id="^one.alynx.showmethekey$"
-}
