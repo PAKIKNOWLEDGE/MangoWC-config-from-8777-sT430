@@ -17,7 +17,7 @@ This repository contains a highly customized configuration for **MangoWC**, a Wa
 ## ⌨️ Keybindings Highlights
 
 
-| **Shortcut**    | **Action**        | **Description**                                    |  |  |  |
+| **Shortcut**    | **Action**        | **Description**                                    
 | --------------- | ----------------- | -------------------------------------------------- | - | - | - |
 | `Super + r`     | Reload Config     | Hot-reload the MangoWC configuration.              |  |  |  |
 | `Super + Space` | App Launcher      | Launches`fuzzel`for quick application access.      |  |  |  |
@@ -45,3 +45,13 @@ This repository contains a highly customized configuration for **MangoWC**, a Wa
 4. Launch `mango` from your TTY.
 
    Note: The "Scroller" layout and keybindings are heavily inspired by Niri but adapted for MangoWC's unique implementation.
+---
+---
+
+## 💡 Credits & Acknowledgements
+
+This project is a customized version of the awesome [mechabar](https://github.com/Sejjy/MechaBar). 
+
+Major thanks to the original author for the solid foundation! I've tweaked the layout and logic to better fit the **mangowc** workflow (and added some personal flavor). 
+
+Licensed under MIT.
