@@ -18,40 +18,31 @@ This repository contains a highly customized configuration for **MangoWC**, a Wa
 
 
 | **Shortcut**    | **Action**        | **Description**                                    
-| --------------- | ----------------- | -------------------------------------------------- | - | - | - |
-| `Super + r`     | Reload Config     | Hot-reload the MangoWC configuration.              |  |  |  |
-| `Super + Space` | App Launcher      | Launches`fuzzel`for quick application access.      |  |  |  |
-| `Super + h/l`   | Focus Left/Right  | Navigate through the window scroll.                |  |  |  |
-| `Super + f`     | Toggle Maximize   | Vertical maximize for the current column.          |  |  |  |
-| `Super + v`     | Clipboard History | Access`cliphist`via a`wofi`dmenu interface.        |  |  |  |
-| `Print`         | Screenshot        | Regional capture using`grim`,`slurp`, and`swappy`. |  |  |  |
+| --------------- | ----------------- | --------------------------------------------------
+| `Super + r`     | Reload Config     | Hot-reload the MangoWC configuration.              
+| `Super + Space` | App Launcher      | Launches`fuzzel`for quick application access.      
+| `Super + h/l`   | Focus Left/Right  | Navigate through the window scroll.                
+| `Super + f`     | Toggle Maximize   | Vertical maximize for the current column.          
+| `Super + v`     | Clipboard History | Access`cliphist`via a`wofi`dmenu interface.        
+| `Print`         | Screenshot        | Regional capture using`grim`,`slurp`, and`swappy`. 
 
 ## 📦 Component Stack
-
 * **Bar**: `Waybar`
 * **Input Method**: `fcitx5`
 * **Wallpaper**: `waypaper`
 * **Notification**: `mako`
 * **OSD**: `swayosd-server` for physical volume/brightness key feedback
 * **Idle Management**: `swayidle` with `swaylock` integration
-
 ## 🚀 Installation
-
 1. Clone this config to `~/.config/mango/`.
 2. Ensure `autostart.sh` is executable:
-
    `chmod +x \~/.config/mango/autostart.sh`
 3. Identify your monitor name via `wlr-randr` and update the `monitor` line in `config.conf` (default is `LVDS-1`).
 4. Launch `mango` from your TTY.
-
    Note: The "Scroller" layout and keybindings are heavily inspired by Niri but adapted for MangoWC's unique implementation.
 ---
 ---
-
 ## 💡 Credits & Acknowledgements
-
 This project is a customized version of the awesome [mechabar](https://github.com/Sejjy/MechaBar). 
-
 Major thanks to the original author for the solid foundation! I've tweaked the layout and logic to better fit the **mangowc** workflow (and added some personal flavor). 
-
 Licensed under MIT.
